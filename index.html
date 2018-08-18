@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html  lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">    
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<style>
+			@font-face {
+				font-family: Bebas; /* Гарнитура шрифта */
+				src: url(fonts/bebas_neue/BebasNeue%20Bold.otf); /* Путь к файлу со шрифтом */
+				}
+			@font-face {
+				font-family: BebasT; /* Гарнитура шрифта */
+				src: url(fonts/bebas_neue/BebasNeue%20Thin.otf); /* Путь к файлу со шрифтом */
+				}
+			@font-face {
+				font-family: BebasR; /* Гарнитура шрифта */
+				src: url(fonts/bebas_neue/BebasNeue%20Regular.otf); /* Путь к файлу со шрифтом */
+				}
+			.pere {
+				font-family: Bebas;
+				font-size:1300%;
+				}
+			.pere2 {
+				font-family: BebasR;
+				font-size:330%;
+				}
+            .pere3 {
+				font-family: BebasT;
+				font-size:300%;
+				}
+			.pere4 {
+				font-family: BebasR;
+				font-size:190%;
+				}
+			.pere5 {
+				font-family: BebasR;
+				font-size:190%;
+				}
+			.pere6 {
+				font-family: Bebas;
+				font-size:500%;
+				}
+			.pere7 {
+				font-family: BebasR;
+				font-size:200%;
+				}
+			.pere8 {
+				font-family: Bebas;
+				font-size:500%;
+				}
+			@media screen and (max-width: 600px) {
+				.pere {
+					font-family: Bebas;
+					font-size:500%;
+					}
+				}
+			@media screen and (min-width: 600px) {
+				.pere {
+					font-family: Bebas;
+					font-size:900%;
+					}
+				}
+			@media screen and (min-width: 992px) {
+				.pere {
+					font-family: Bebas;
+					font-size:1300%;
+					}
+				}
+			@media screen and (min-width: 1200px) {
+				.pere {
+					font-family: Bebas;
+					font-size:2000%;
+					}
+				}
+ 
+		</style>
+	</head>
+<body>	
+	<header>
+		<div class="fixed-action-btn hide-on-med-and-up">
+			<a id="menu" class="waves-effect waves-light btn-large btn-floating right red accent-3 pulse" href="https://api.ticketscloud.org/v1/widgets/common?event=5b6c6586153f5c001caa88e4&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSJ9.eyJwIjoiNWI2NWFjYWJhNGI4ZTQwMDIxYmZhMzZlIn0.vhDAgJZzZvboTS-hBWqo9W3APvdhWG1tTXnfhfTUY8M&partner=5b65acaba4b8e40021bfa36e&m=mobile&utm=5b774481a4b8e40020f0dc8b&category=592841f8515e35002dead964&tags=592841f8515e35002dead978%2C592841f8515e35002dead970%2C592841f8515e35002dead969%2C592841f8515e35002dead977%2C592841f8515e35002dead973&e=5b6c6586153f5c001caa88e4">
+				<i class="fas fa-ticket-alt"></i>
+			</a>
+		</div>
+		
+	
+  
+	</header>
+	
+	<div class="hide-on-med-and-up">
+		<div class=" tap-target  transparent z-depth-0 white-text" data-activates="menu">
+			<div class="tap-target-content">
+
+				<img src="https://vk.com/images/stickers/4350/128.png" class="left valign center-block"></br>
+				<span class="pere4 grey">Цены растут </span> </br><span class="pere5 red accent-3 pulse"> ежемесячно!</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row white">
+		<div class="valign-wrapper col s12 z-depth-4  white-text center " style="background-image: url('img/photo3.jpg'); background-size:cover; min-height:100vh;">
+			<div class="valign center-block">
+				<span class="pere">COVENFEST</span></br>
+				<span class="pere2">Москва <i class="far fa-star"></i></span><span class="pere2"> 23 марта 2019 <i class="far fa-star"></i></span><span class="pere2"> Rock House</span></br>
+				<a class="hide-on-small-only  waves-effect waves-light btn-large pulse red accent-3 z-depth-5" data-tc-event="5b6c6586153f5c001caa88e4" data-tc-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSJ9.eyJwIjoiNWI2NWFjYWJhNGI4ZTQwMDIxYmZhMzZlIn0.vhDAgJZzZvboTS-hBWqo9W3APvdhWG1tTXnfhfTUY8M"><i class="fas fa-ticket-alt left"></i>Купить билеты</a></br>
+				<div id="tickets" class="modal">
+					<span class="modal-content" data-tc-event-inline="5b6c6586153f5c001caa88e4" data-tc-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSJ9.eyJwIjoiNWI2NWFjYWJhNGI4ZTQwMDIxYmZhMzZlIn0.vhDAgJZzZvboTS-hBWqo9W3APvdhWG1tTXnfhfTUY8M"></span>
+				</div>
+				<span class="pere3  grey-text lighten-5 hide-on-small-only">Предупреждение! Это мероприятие принесет вам море ярких эмоций и впечатлений</span>
+			</div>
+		</div>
+</div>
+	<div class="row white">
+	
+	<h1 class="center pere2">Темнота тоже бывает красивой — когда в ней прячется свет!</h1>
+	<div class="container">
+	<span class="pere4 grey-text">Covenfest — это яркое и шумное празднование прихода весны и астрологического нового года, который начинается в день весеннего равноденствия! Это ежегодное мероприятие порадует ценителей современных направлений тяжелой музыки!</span></br>
+	</div>
+	<div class="valign-wrapper grey col s12 white-text" style=" background-size:cover; min-height:100vh;">
+    <span class="col s12 valign right pere8 grey ">Офигенное место для спонсора</br>Но где он?</span>
+	</br>
+	</div></br>
+	<h1 class="center pere2">Участники фестиваля</h1>
+		<div class="col s12 m6 l4 xl4">
+		<div class="card">
+				<div class="card-image pere center">
+					<img src="img/rtr.jpg">
+					<span class="card-title">Rave The Reqviem</span>
+				</div>
+		</div>
+		</div>
+		
+		<div class="col s12 m6 l4 xl4">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/metalite.jpg">
+					<span class="card-title pere">Metalite</span>
+					
+				</div>
+			</div>
+		</div>	
+		<div class="col s12 m6 l4 xl4">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-cog fa-spin"></i> участник #3</br>Мы объявим его позже</span>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4 xl4">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-cog fa-spin"></i> участник #4</br>Мы объявим его позже</span>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4 xl4">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-cog fa-spin"></i> участник #5</br>Мы объявим его позже</span>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4 xl4">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-cog fa-spin"></i> участник #6</br>Мы объявим его позже</span>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4 xl4">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-cog fa-spin"></i> участник #7</br>Мы объявим его позже</span>
+					
+				</div>
+			</div>
+		</div>
+		
+	</div >
+	
+	
+	<h1 class="center pere2 black-text">Разновидности билетов</br><i class="far fa-grin-beam-sweat fa-2x "></i></h1>
+	<div class="row">
+	<div class="col s12 l6 xl4">
+	<i class="fas fa-ticket-alt fa-6x yellow-text fa-rotate-90 left"></i>
+	<span class="pere4 yellow white-text">Meet&Greet</span></br>
+	Можно будет вдоволь потискать музыкантов до концерта
+	</div>
+	<div class="col s12 l6 xl4">
+	<i class="fas fa-ticket-alt  fa-6x blue-text fa-rotate-90 left"></i>
+	<span class="pere4 blue white-text">Танцевальный партер </span></br>
+	Можно будет поплясать и поймать барабанные палочки
+	</div>
+	<div class="col s12 l6 xl4">
+	<i class="fas fa-ticket-alt  fa-6x black-text fa-rotate-90 left"></i>
+	<span class="pere4 black white-text">Саундчек</span></br>
+	Можно будет мешаться под ногами у музыкантов.
+	</div>
+		<div class="col s12 l6 xl4">
+	<i class="fas fa-ticket-alt  fa-6x green-text fa-rotate-90 left"></i>
+	<span class="pere4 green white-text">VIP</span> <i class="fas fa-equals"> </i>
+	<i class="fas fa-ticket-alt fa-3x yellow-text fa-rotate-90 "></i> <i class="fas fa-plus"></i> <i class="fas fa-ticket-alt fa-3x blue-text fa-rotate-90 "></i><i class="fas fa-plus"></i> <i class="fas fa-ticket-alt fa-3x black-text fa-rotate-90 "></i></br>
+Можно будет много чего
+	</div>
+		<div class="col s12 l6 xl4">
+	<i class="fas fa-ticket-alt  fa-6x red-text fa-rotate-90 left"></i>
+	<span class="pere4 red white-text">Мягкие диваны</span></br>
+	Можно будет смотреть концерт сидя на мягчайшем диване как настоящий царь
+	</div>
+	<div class="col s12 l6 xl4">
+	<i class="fas fa-ticket-alt  fa-6x pink-text fa-rotate-90 left"></i>
+	<span class="pere4 pink white-text">Проход в гримерку</span></br>
+	Можно будет признаться в любви там, где никто не сможет от вас убежать
+	</div>
+	<div class="col s12 l6 xl4">
+	<i class="fas fa-ticket-alt  fa-6x indigo-text fa-rotate-90 left"></i>
+	<span class="pere4 indigo white-text">Дирижёр</span></br>
+	Можно будет выйти на сцену во время выступления
+	</div>
+	<div class="col s12 l6 xl4">
+	<i class="fas fa-ticket-alt  fa-6x green-text text-accent-2  fa-rotate-90 left"></i>
+	<span class="pere4 green accent-2 white-text">Хлебная карточка</span></br>
+	Можно будет позавтракать с музыкантами на следующий день после концерта
+	</div>
+
+
+
+</div>
+
+<script>
+
+</script>
+	<div class="container">
+	<h1 class="center pere2 black-text">Билеты будут дорожать каждый месяц!</br>Праздничных скидок не будет!</br><i class="far fa-sad-cry fa-2x "></i></h1>
+	<span class="pere4 grey-text">Мы любим ранних пташек, поэтому цены на билеты будут повышаться ежемесячно. Если вам нравятся уже объявленные музыкальные коллективы, то поторопитесь с покупкой.</span> </br>
+	<h1 class="center pere2 black-text">Но билеты можно сдать в любой момент и вернуть деньги! </br><i class="far fa-smile-beam fa-2x"></i></h1>
+	<span class="pere4 grey-text">Не знаете свои планы на 23 марта и поэтому сомневаетесь о покупке билетов? Пока вы сомневаетесь, цены на билеты растут конскими темпами! Мы вернем деньги за билеты если вы по тем или иным причинам захотите их получить. Пусть эта проблема не беспокоит вас.</span>
+	<h1 class="center pere2 black-text">Наши уважаемые партнеры</h1>
+	
+	</div>
+	<div class="row">
+	<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+		
+			<div class="col s6 m2 l2 xl2">
+			<div class="card">
+				<div class="card-image">
+					<img src="img/secret.jpg">
+					<span class="card-title pere"><i class="fas fa-spinner fa-spin"></i></br></span>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container center">
+	<h1 class="center pere2 black-text">Добраться на Covenfest просто!</h1>
+	<span class="center pere4 grey-text">Измайловское шоссе, дом 71, корпус 5(Е), клуб Rock House </br> Там живет Рок-н-ролл!</span>
+	</div>
+	<script src="https://api.ticketscloud.org/static/scripts/widget/tcwidget.js"></script>
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A71a4e7745fbdb0cf19d4e87e21684d07f9448372b46dd25f5c2c08b4952afd76&amp;width=100%25&amp;height=306&amp;lang=ru_RU&amp;scroll=true"></script>	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.x-git.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>
